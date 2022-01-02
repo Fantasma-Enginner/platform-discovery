@@ -1,0 +1,11 @@
+# DEVELOP PROFILE CONFIG
+server:
+  ssl:
+    enabled: false   
+    key-store-type: PKCS12
+    key-store: classpath:keystore/vpeureka.p12
+    key-store-password: Thomas_Eureka_21
+    key-alias: vpeureka
+    trust-store: classpath:keystore/vpeureka.p12
+    trust-store-password: Thomas_Eureka_21
+    client-auth: none

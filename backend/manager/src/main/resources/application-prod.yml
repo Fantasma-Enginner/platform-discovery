@@ -1,0 +1,4 @@
+# PRODUCTION PROFILE CONFIG
+logging:
+  file:
+    path: logs

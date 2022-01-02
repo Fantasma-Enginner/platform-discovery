@@ -1,0 +1,10 @@
+[Unit]
+Description=Vial+ Platform Discovery and Register Service.
+After=syslog.target
+
+[Service]
+ExecStart=/opt/vps/platform-discovery/bin/platform-discovery.jar
+SuccessExitStatus=TEMPFAIL 250 SIGKILL
+
+[Install]
+WantedBy=multi-user.target

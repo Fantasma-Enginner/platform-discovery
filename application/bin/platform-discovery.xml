@@ -1,0 +1,11 @@
+<service>
+  <id>VPS-platform-discovery</id>
+  <name>VPS-platform-discovery</name>
+  <description>This service runs operations for discory and register for services of the Platform VIAL+.</description>
+  <env name="PLATFORM_DISCOVERY_HOME" value="%BASE%"/>
+  <executable>java</executable>
+  <arguments>-Xrs -Xmx256m -jar "%BASE%\platform-discovery.jar"</arguments>
+  <log mode="roll-by-size"></log>
+  <logpath>logs</logpath>
+  <onfailure action="restart" delay="10 sec" />
+</service>
